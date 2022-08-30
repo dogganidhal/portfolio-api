@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.ndogga.portfolio
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [ annotation-api, app-name, assertj, awaitility, data, data-jpa, flyway, gradle, h2, http-client, jackson-databind, java, java-application, jdbc-hikari, junit, logback, lombok, micronaut-build, micronaut-test-rest-assured, mockito, netty-server, openapi, readme, serialization-jackson, shade, swagger-ui, test-resources, yaml ]

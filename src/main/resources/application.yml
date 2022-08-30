@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: portfolioApi
+  router:
+    static-resources:
+      swagger:
+        paths: classpath:META-INF/swagger
+        mapping: /swagger/**
+      swagger-ui:
+        paths: classpath:META-INF/swagger/views/swagger-ui
+        mapping: /swagger-ui/**
+datasources:
+  default:
+    driverClassName: org.h2.Driver
+    schema-generate: CREATE_DROP
+    dialect: H2
+    url: jdbc:h2:file:./portfolio;MV_STORE=false
+netty:
+  default:
+    allocator:
+      max-order: 3
+jpa.default.properties.hibernate.hbm2ddl.auto: none
